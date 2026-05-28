@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X, Sprout } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   const navLinks = [
     { name: "Accueil", href: "#home" },
@@ -18,12 +19,19 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
-              <img 
-                src="https://res-console.cloudinary.com/dmqig9rqk/thumbnails/v1/image/upload/v1779956689/MTc3ODMxMzc2NDA0Ni1yZW1vdmViZy1wcmV2aWV3X2N4cHl0Zw==/preview" 
-                alt="TSIBOLO Garden Logo" 
-                className="w-full h-full object-contain"
-                referrerPolicy="no-referrer"
-              />
+              {!imgError ? (
+                <img 
+                  src="https://res.cloudinary.com/dmqig9rqk/image/upload/v1779956689/1778313764046-removebg-preview_cxpytg.png" 
+                  alt="TSIBOLO Garden Logo" 
+                  className="w-full h-full object-contain"
+                  referrerPolicy="no-referrer"
+                  onError={() => setImgError(true)}
+                />
+              ) : (
+                <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600">
+                  <Sprout size={24} />
+                </div>
+              )}
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-emerald-900 leading-none">TSIBOLO GARDEN</span>

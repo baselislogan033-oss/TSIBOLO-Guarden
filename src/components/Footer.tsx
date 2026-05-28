@@ -1,6 +1,9 @@
-import { Mail, Phone, MessageCircle, Facebook } from "lucide-react";
+import { Mail, Phone, MessageCircle, Facebook, Sprout } from "lucide-react";
+import { useState } from "react";
 
 export function Footer() {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <footer className="bg-stone-900 pt-20 pb-10 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,12 +11,19 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-16 h-16 flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://res-console.cloudinary.com/dmqig9rqk/thumbnails/v1/image/upload/v1779956689/MTc3ODMxMzc2NDA0Ni1yZW1vdmViZy1wcmV2aWV3X2N4cHl0Zw==/preview" 
-                  alt="TSIBOLO Garden Logo" 
-                  className="w-full h-full object-contain"
-                  referrerPolicy="no-referrer"
-                />
+                {!imgError ? (
+                  <img 
+                    src="https://res.cloudinary.com/dmqig9rqk/image/upload/v1779956689/1778313764046-removebg-preview_cxpytg.png" 
+                    alt="TSIBOLO Garden Logo" 
+                    className="w-full h-full object-contain"
+                    referrerPolicy="no-referrer"
+                    onError={() => setImgError(true)}
+                  />
+                ) : (
+                  <div className="w-12 h-12 bg-emerald-950 rounded-full flex items-center justify-center text-emerald-400 border border-emerald-800">
+                    <Sprout size={28} />
+                  </div>
+                )}
               </div>
               <span className="text-2xl font-bold tracking-tight">TSIBOLO GARDEN</span>
             </div>
