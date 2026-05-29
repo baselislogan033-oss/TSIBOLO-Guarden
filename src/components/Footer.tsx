@@ -31,7 +31,7 @@ export function Footer() {
               Transformons ensemble votre espace extérieur en un lieu durable, propre et sain. 
             </p>
             <div className="flex gap-4">
-               <span className="text-emerald-500 font-bold tracking-widest text-xs uppercase">ZARIDAINA MADIO, TONTOLO MAHASALAMA</span>
+               <span className="text-emerald-500 font-bold tracking-widest text-xs uppercase">TONTOLO IAINANA MADIO, ZARIDAINA MAHASALAMA</span>
             </div>
           </div>
 

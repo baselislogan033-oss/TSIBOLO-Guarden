@@ -35,7 +35,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-emerald-900 leading-none">TSIBOLO GARDEN</span>
-              <span className="text-[10px] font-medium tracking-[0.2em] text-emerald-600">ZARIDAINA MADIO</span>
+              <span className="text-[10px] font-medium tracking-[0.2em] text-emerald-600">TONTOLO IAINANA MADIO</span>
             </div>
           </div>
 

@@ -32,8 +32,8 @@ export function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl text-stone-100 font-medium mb-10 leading-relaxed max-w-xl">
-              ZARIDAINA MADIO, <br className="hidden sm:block" />
-              TONTOLO MAHASALAMA
+              TONTOLO IAINANA MADIO, <br className="hidden sm:block" />
+              ZARIDAINA MAHASALAMA
             </p>
 
             <div className="flex flex-wrap gap-4">
