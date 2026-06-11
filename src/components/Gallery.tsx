@@ -3,31 +3,31 @@ import { motion } from "motion/react";
 export function Gallery() {
   const images = [
     {
-      url: "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/643373733_122162414072680403_7501658027295618276_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG26ZEwIU8cXq1IAAC4iGVa-BiRwdfw7sP4GJHB1_Duw-nILNhQ18a6qXbFWz2jZDc-QauJeo2uRWg3MqNi7UsB&_nc_ohc=UJ_zxqW2db0Q7kNvwFg-Lgb&_nc_oc=AdrR5PVdD8vvrlnwojFU-9l_WbpBzxZ2Ixg4eyO6j9MR6Pe0Fl2ov2dDM1_RZnal0rM&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=qngds23Kad51kSwF35lsMQ&_nc_ss=7b2a8&oh=00_Af7kQMMJLHxmGHmomb7iRPK0y8NmqrO73PRIbehNiviNhA&oe=6A1DD4B8",
+      url: "/src/assets/images/tsibolo_hero_garden_1779956004690.png",
       title: "Jardin Tropical Luxuriant",
       category: "Aménagement",
       size: "large",
     },
     {
-      url: "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/618355997_122159634614680403_8689877542478411232_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEg-rnkdJB-YbY6mmWhn4-6o-ZP8b8__aqj5k_xvz_9qpG4uHWVvWEw6LfAjpH62LJLHJZ4xkkLJgHp8X3M_mzt&_nc_ohc=-EuHjex1Lj4Q7kNvwEI5HO9&_nc_oc=AdrJzzC4zm4Dzxwop9LxDN-_sLhs-_J-I0jdZcZkbqfzJAUwTu_OMh-VTaCwUZoQexI&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=m9TKnHh9KlN0OlS5gwC1uQ&_nc_ss=7b2a8&oh=00_Af65-yvZT4RjIXoUOwLueMMxyLgb7fR5Eww8ykd2us-apA&oe=6A1DE505",
+      url: "/src/assets/images/tsibolo_garden_design_1779956019231.png",
       title: "Design de Pierres et Bois",
       category: "Design",
       size: "small",
     },
     {
-      url: "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/679817695_2939624216233438_8788347931075146566_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFLEBe4uAExpGGJ0wrN-YXfa4TYrxBTstprhNivEFOy2oAWF_4SAbfpEjSHSpCU3ReQ9_T5m9qn0y-e5-EbYKx2&_nc_ohc=e7MWR8AuezAQ7kNvwHVDwfX&_nc_oc=AdqnSFTBNczOZJ0Msj2mbSS8plSMbL_StpKpsk2OHV3y6NEUGQpe69TcjBv-XWWghkc&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=ptJOtDfB0dTLSPHs1Jupog&_nc_ss=7b2a8&oh=00_Af6AYrhrmT9houQP_zlBjS5tCBbCmgH7w6prehZWMtRVCQ&oe=6A1DC68E",
+      url: "/src/assets/images/jardiland_style_garden_hero_1779966620798.png",
       title: "Espace de Détente Extérieur",
       category: "Décoration",
       size: "small",
     },
     {
-      url: "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/710280839_1778752693088329_5022210048516287138_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGyQrgxsuw8pD--HF5Hp-Pzahib47FmhGNqGJvjsWaEY8ot9I0B768ZS4dcJ-um7a7f3iuCuBHHxzNhztXFB-zN&_nc_ohc=XFz3vRhxg8QQ7kNvwGDVgow&_nc_oc=Adq0VfyL8ZoTYluyCRP6gqytkU4KKNYwbKbJ3hH8FNrygcq5U6JZ-CaITtMTi8gU-jA&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=Bvw3JJkvo_T6xk6rWs-0pg&_nc_ss=7b2a8&oh=00_Af7e1xXGuejuuF_6mZ7QMCJsxfr9yPqbsezzxLLxBr5AZw&oe=6A1DDE0F",
-      title: "Pélouse Impeccable",
+      url: "/src/assets/images/tsibolo_garden_maintenance_1779956040747.png",
+      title: "Pelouse Impeccable",
       category: "Entretien",
       size: "small",
     },
     {
-      url: "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/707775296_1778759163087682_5094946776115288253_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFfuUARhsuHI6hkQbDpuICEWYqfOJDdNt5Zip84kN023svs0qkcrOKr2c6nWIaT-c5TyB4eEjBFZ-VmdtGfP_dx&_nc_ohc=KALW9hwtmEoQ7kNvwHP5ru4&_nc_oc=AdqEJKpVaHhUTh8GXMgNQLNAGd2KDCLjEjT7mRnf9hK8hb_SKgs3R_3ET5-QnMUgK8I&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=fQ79GYwPUNwxu0ndHdDORw&_nc_ss=7b2a8&oh=00_Af4MY6Gf03TWWYJ4GZxMXY5jYsWom-ZIWiWwNoh78U0GIg&oe=6A1E0673",
+      url: "/src/assets/images/landscaped_garden_hero_1779966356980.png",
       title: "Sentier de Jardin Zen",
       category: "Aménagement",
       size: "small",
